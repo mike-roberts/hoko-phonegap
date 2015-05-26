@@ -23,7 +23,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="HOKO">
-                <param name="ios-package" value="com.hokolinks.plugin.hoko"/>
+                <param name="ios-package" value="com.hokolinks.plugin.Hoko"/>
             </feature>
         </config-file>
     </platform>
