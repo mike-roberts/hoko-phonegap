@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.hokolinks.hoko" version="0.0.1">
+
     <name>HOKO</name>
+
+    <asset src="www/hoko.js" target="js/hoko.js"/>
+
     <description>HOKO Deep Linking SDK</description>
     <license>Apache 2.0</license>
     <keywords>cordova,deep links,growth,hoko</keywords>
-    <js-module src="hoko.js" name="hoko">
-        <clobbers target="HOKO" />
+
+    <js-module src="www/hoko.js" name="hoko">
+        <clobbers target="hoko" />
     </js-module>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="HOKO">
-                <param name="ios-package" value="CDVHoko"/>
+                <param name="ios-package" value="com.hokolinks.plugin.hoko"/>
+            </feature>
+        </config-file>
+    </platform>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="HOKO">
+                <param name="android-package" value="CDVHoko"/>
             </feature>
         </config-file>
     </platform>
