@@ -1,0 +1,6 @@
+[submodule "src/android/hoko-android"]
+	path = src/android/hoko-android
+	url = git@github.com:hokolinks/hoko-android.git
+[submodule "src/ios/hoko-ios"]
+	path = src/ios/hoko-ios
+	url = git@github.com:hokolinks/hoko-ios.git
