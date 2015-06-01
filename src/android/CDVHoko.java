@@ -7,7 +7,7 @@ import org.json.JSONException;
 public class CDVHoko extends CordovaPlugin {
 
     private enum Function {
-        setup, mapRoute
+        setup, mapRoute, addHandler
     }
 
     @Override
@@ -19,6 +19,8 @@ public class CDVHoko extends CordovaPlugin {
                     return setup(jsonArray);
                 case Function.mapRoute:
                     return mapRoute(jsonArray, callbackContext);
+                case Function.addHandler:
+                    return addHandler(callbackContext);
                 default:
                     return false;
             }
@@ -39,11 +41,23 @@ public class CDVHoko extends CordovaPlugin {
         Hoko.deeplinking().mapRoute(route, new DeeplinkCallback() {
             @Override
             public void deeplinkOpened(Deeplink deeplink) {
-                callbackContext.success(deeplink)); //toJSON()
+                callbackContext.success(deeplink.toJSON()));
             }
         })
         callbackContext.success(message);
         return true;
     }
 
+    private boolean addHandler(CallbackContext callbackContext) throws JSONException {
+        String route = jsonArray.getString(0);
+
+        Hoko.deeplinking().addHandler(new DeeplinkCallback() {
+            @Override
+            public void deeplinkOpened(Deeplink deeplink) {
+                callbackContext.success(deeplink.toJSON()));
+            }
+        })
+        callbackContext.success(message);
+        return true;
+    }
 }

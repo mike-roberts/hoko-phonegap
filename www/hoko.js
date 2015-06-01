@@ -1,7 +1,13 @@
 var exec = require('cordova/exec');
 
 module.exports = {
-  mapRoute: function(route, successCallBack, errorCallBack) {
-    cordova.exec(successCallBack, errorCallBack, 'CDVHoko', 'mapRoute', [name]);
+  setup: function(token) {
+    cordova.exec(deeplinkCallback, null, 'CDVHoko', 'setup', [token]);
+  },
+  mapRoute: function(route, deeplinkCallback) {
+    cordova.exec(deeplinkCallback, null, 'CDVHoko', 'mapRoute', [route]);
+  },
+  addHandler: function(deeplinkCallback) {
+    cordova.exec(deeplinkCallback, null, 'CDVHoko', 'addHandler', null);
   }
 };
