@@ -97,54 +97,55 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/versionchecker/VersionChecker.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/async/NetworkAsyncTask.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/async/HttpRequestCallback.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/async/HttpRequest.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/Networking.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/log/HokoLog.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/lifecycle/ApplicationLifecycleCallback.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/lifecycle/ApplicationLifecycle.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/Utils.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/DateUtils.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/UnknownException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/SetupNotCalledYetException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/SetupCalledMoreThanOnceException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/ServerWarningException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/ServerErrorException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/RouteNotMappedException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/NullDeeplinkException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/MultipleDefaultRoutesException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/LinkResolveException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/LinkGenerationException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/HokoException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/GenericServerException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/DuplicateRouteException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/ActivityNotDeeplinkableException.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/URL.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/RouteImpl.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/Route.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/IntentRouteImpl.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/Device.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/DeeplinkPlatform.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/DeeplinkCallback.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/Deeplink.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/App.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/listeners/SmartlinkResolveListener.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/listeners/LinkGenerationListener.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkRouteParameter.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkRoute.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkQueryParameter.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkFragmentActivity.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkDefaultRoute.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Routing.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Resolver.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/LinkGenerator.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Handling.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/DeferredDeeplinkingBroadcastReceiver.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Deeplinking.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/AnnotationParser.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/activity/HokoActivity.java"/>
-        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/Hoko.java"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/versionchecker/VersionChecker.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/async/NetworkAsyncTask.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/async/HttpRequestCallback.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/async/HttpRequest.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/networking/Networking.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/log/HokoLog.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/lifecycle/ApplicationLifecycleCallback.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/lifecycle/ApplicationLifecycle.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/Utils.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/utils/DateUtils.java" target-dir="src/com/hoko/utils"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/UnknownException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/SetupNotCalledYetException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/SetupCalledMoreThanOnceException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/ServerWarningException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/ServerErrorException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/RouteNotMappedException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/NullDeeplinkException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/MultipleDefaultRoutesException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/LinkResolveException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/LinkGenerationException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/HokoException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/GenericServerException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/DuplicateRouteException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/exceptions/ActivityNotDeeplinkableException.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/URL.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/RouteImpl.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/Route.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/IntentRouteImpl.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/Device.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/DeeplinkPlatform.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/DeeplinkCallback.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/Deeplink.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/model/App.java" target-dir="src/com/hoko/model"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/listeners/SmartlinkResolveListener.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/listeners/LinkGenerationListener.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkRouteParameter.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkRoute.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkQueryParameter.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkFragmentActivity.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/annotations/DeeplinkDefaultRoute.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Routing.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Resolver.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/LinkGenerator.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Handling.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/DeferredDeeplinkingBroadcastReceiver.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/Deeplinking.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/deeplinking/AnnotationParser.java" target-dir="src/com/hoko/deeplinking"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/activity/HokoActivity.java" target-dir="src/com/hoko/activity"/>
+        <source-file src="src/android/hoko-android/hoko/src/main/java/com/hokolinks/Hoko.java" target-dir="src/com/hoko"/>
+        <source-file src="src/android/CDVHoko.java" target-dir="src/com/hoko"/>
     </platform>
 </plugin>

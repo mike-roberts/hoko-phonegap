@@ -1,8 +1,13 @@
 package com.hokolinks.plugin;
 
+import android.content.Context;
+import com.hokolinks.Hoko;
+import com.hokolinks.model.Deeplink;
+import com.hokolinks.model.DeeplinkCallback;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 public class CDVHoko extends CordovaPlugin {
 
@@ -13,13 +18,12 @@ public class CDVHoko extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray jsonArray, CallbackContext callbackContext) throws JSONException {
         try {
-            Function function = Function.valueOf(action)
-            switch (function) {
-                case Function.setup:
+            switch (action) {
+                case "setup":
                     return setup(jsonArray);
-                case Function.mapRoute:
+                case "mapRoute":
                     return mapRoute(jsonArray, callbackContext);
-                case Function.addHandler:
+                case "addHandler":
                     return addHandler(callbackContext);
                 default:
                     return false;
@@ -41,23 +45,22 @@ public class CDVHoko extends CordovaPlugin {
         Hoko.deeplinking().mapRoute(route, new DeeplinkCallback() {
             @Override
             public void deeplinkOpened(Deeplink deeplink) {
-                callbackContext.success(deeplink.toJSON()));
+                final callbackContext.success(deeplink.toJSON());
             }
-        })
-        callbackContext.success(message);
+        });
+        callbackContext.success();
         return true;
     }
 
     private boolean addHandler(CallbackContext callbackContext) throws JSONException {
-        String route = jsonArray.getString(0);
 
         Hoko.deeplinking().addHandler(new DeeplinkCallback() {
             @Override
             public void deeplinkOpened(Deeplink deeplink) {
-                callbackContext.success(deeplink.toJSON()));
+                final callbackContext.success(deeplink.toJSON());
             }
-        })
-        callbackContext.success(message);
+        });
+        callbackContext.success();
         return true;
     }
 }
